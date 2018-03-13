@@ -25,4 +25,6 @@ class Post < ApplicationRecord
   has_many :subs,
     through: :post_subs,
     source: :sub
+
+  has_many :comments
 end

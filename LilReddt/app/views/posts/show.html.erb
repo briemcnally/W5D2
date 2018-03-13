@@ -6,6 +6,20 @@
 <h3>Content</h3>
   <p><%= @post.content %></p>
 
+
+<h3>Comments</h3>
+<%= link_to "Add Comment", "/posts/#{@post.id}/comments/new" %>
+<br>
+<ul>
+
+<% @post.comments.each do |comment| %>
+  <ul>
+    <li><%= link_to comment.content, comment_url(comment) %></li>
+    <%= comment.comments.each do  %>
+  <br>
+<% end %>
+</ul>
+
 <h3>Subs:</h3>
 <ul>
 <% @post.post_subs.each do |p_sub| %>
