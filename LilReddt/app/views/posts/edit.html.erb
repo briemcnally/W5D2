@@ -1,0 +1,41 @@
+<h1>Edit Post</h1>
+
+<% p_subs = PostSub.where(post_id: @post.id).map{|p_sub| p_sub.sub_} %>
+
+<form action="<%= post_url(@post) %>" method="post">
+  <%= auth_token %>
+  <input type="hidden" name="_method" value="patch">
+
+  <label>Title:
+      <input type="text" name="post[title]" value="<%= @post.title %>">
+  </label>
+  <br>
+
+  <label>URL:
+    <input type="text" name="post[url]" value="<%= @post.url %>">
+  </label>
+  <br>
+
+  <label>Body:
+    <input type="textarea" name="post[content]" value="<%= @post.content %>">
+  </label>
+  <br>
+
+  <label>Subs:</label>
+  <br>
+
+
+  <% Sub.all.each do |sub_| %>
+    <label>
+      <input type="checkbox" name="sub_ids[]" value="<%= sub_.id %>" <%= 'checked' if p_subs.include?(sub_) %> >
+      <%= sub_.title %>
+    </label>
+    <br>
+
+  <% end %>
+
+
+  <br>
+
+  <input type="submit" name="" value="Edit Post">
+</form>

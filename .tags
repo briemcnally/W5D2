@@ -1,0 +1,15 @@
+DeleteSubIdFromPostTable	/Users/appacademy/Desktop/W5D2/LilReddt/db/migrate/20180313211548_delete_sub_id_from_post_table.rb	/^class DeleteSubIdFromPostTable < ActiveRecord::Migration[5.1]$/;"	class	line:1
+change	/Users/appacademy/Desktop/W5D2/LilReddt/db/migrate/20180313211548_delete_sub_id_from_post_table.rb	/^  def change$/;"	method	line:2	class:DeleteSubIdFromPostTable
+CreatePostSubs	/Users/appacademy/Desktop/W5D2/LilReddt/db/migrate/20180313211710_create_post_subs.rb	/^class CreatePostSubs < ActiveRecord::Migration[5.1]$/;"	class	line:1
+change	/Users/appacademy/Desktop/W5D2/LilReddt/db/migrate/20180313211710_create_post_subs.rb	/^  def change$/;"	method	line:2	class:CreatePostSubs
+Post	/Users/appacademy/Desktop/W5D2/LilReddt/app/models/post.rb	/^class Post < ApplicationRecord$/;"	class	line:14
+PostsController	/Users/appacademy/Desktop/W5D2/LilReddt/app/controllers/posts_controller.rb	/^class PostsController < ApplicationController$/;"	class	line:1
+show	/Users/appacademy/Desktop/W5D2/LilReddt/app/controllers/posts_controller.rb	/^  def show$/;"	method	line:2	class:PostsController
+new	/Users/appacademy/Desktop/W5D2/LilReddt/app/controllers/posts_controller.rb	/^  def new$/;"	method	line:6	class:PostsController
+create	/Users/appacademy/Desktop/W5D2/LilReddt/app/controllers/posts_controller.rb	/^  def create$/;"	method	line:11	class:PostsController
+edit	/Users/appacademy/Desktop/W5D2/LilReddt/app/controllers/posts_controller.rb	/^  def edit$/;"	method	line:26	class:PostsController
+update	/Users/appacademy/Desktop/W5D2/LilReddt/app/controllers/posts_controller.rb	/^  def update$/;"	method	line:31	class:PostsController
+destroy	/Users/appacademy/Desktop/W5D2/LilReddt/app/controllers/posts_controller.rb	/^  def destroy$/;"	method	line:41	class:PostsController
+post_params	/Users/appacademy/Desktop/W5D2/LilReddt/app/controllers/posts_controller.rb	/^  def post_params$/;"	method	line:49	class:PostsController
+PostSub	/Users/appacademy/Desktop/W5D2/LilReddt/app/models/post_sub.rb	/^class PostSub < ApplicationRecord$/;"	class	line:12
+Sub	/Users/appacademy/Desktop/W5D2/LilReddt/app/models/sub.rb	/^class Sub < ApplicationRecord$/;"	class	line:13
